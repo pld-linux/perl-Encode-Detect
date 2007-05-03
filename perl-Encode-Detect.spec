@@ -17,10 +17,8 @@ Source0:	http://www.cpan.org/modules/by-module/Encode/%{pdir}-%{pnam}-%{version}
 URL:		http://search.cpan.org/dist/Encode-Detect/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
+BuildRequires:	perl-Module-Build >= 0.2808
 BuildRequires:	perl-ExtUtils-CBuilder
-BuildRequires:	perl-Module-Build
-%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
