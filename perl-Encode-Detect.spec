@@ -19,6 +19,9 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-Module-Build >= 0.2808
 BuildRequires:	perl-ExtUtils-CBuilder
+%if %{with tests}
+BuildRequires:	perl-Data-Dump
+%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
