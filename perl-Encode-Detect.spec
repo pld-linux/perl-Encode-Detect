@@ -6,7 +6,7 @@
 %define	pdir	Encode
 %define	pnam	Detect
 Summary:	Encode::Detect - An Encode::Encoding subclass that detects the encoding of data
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	Encode::Detect - podklasa Encode::Encoding wykrywająca kodowanie danych
 Name:		perl-Encode-Detect
 Version:	1.00
 Release:	1
@@ -30,11 +30,18 @@ Encode::Detect::Detector to determine the charset of the input data
 and then decodes it using the encoder of the detected charset.
 
 It is similar to Encode::Guess, but does not require the configuration
-of a set of expected encodings.  Like Encode::Guess, it only supports
-decoding--it cannot encode.
+of a set of expected encodings. Like Encode::Guess, it only supports
+decoding - it cannot encode.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Ten moduł Perla jest podklasą Encode::Encoding wykorzystującą
+Encode::Detect::Detector do określenia zestawu znaków danych
+wejściowych i dekodującą je przy użyciu kodera dla wykrytego zestawu
+znaków.
+
+Moduł ten jest podobny do Encode::Guess, ale nie wymaga konfiguracji
+zbioru oczekiwanych kodowań. Podobnie jak Encode::Guess obsługuje
+tylko dekodowanie; nie potrafi kodować.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
