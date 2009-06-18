@@ -8,17 +8,17 @@
 Summary:	Encode::Detect - An Encode::Encoding subclass that detects the encoding of data
 Summary(pl.UTF-8):	Encode::Detect - podklasa Encode::Encoding wykrywająca kodowanie danych
 Name:		perl-Encode-Detect
-Version:	1.00
-Release:	4
+Version:	1.01
+Release:	1
 License:	MPL 1.1
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Encode/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	54e03becd018e237c8ccc275b52df846
+# Source0-md5:	ee9faf55d7105c97b02b8ebe590819c7
 URL:		http://search.cpan.org/dist/Encode-Detect/
+BuildRequires:	perl-ExtUtils-CBuilder
+BuildRequires:	perl-Module-Build >= 0.2808
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-Module-Build >= 0.2808
-BuildRequires:	perl-ExtUtils-CBuilder
 %if %{with tests}
 BuildRequires:	perl-Data-Dump
 %endif
@@ -70,5 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Encode/Detect
 %dir %{perl_vendorarch}/auto/Encode/Detect
 %dir %{perl_vendorarch}/auto/Encode/Detect/Detector
+%{perl_vendorarch}/auto/Encode/Detect/Detector/Detector.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Encode/Detect/Detector/*.so
 %{_mandir}/man3/*
