@@ -70,6 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Encode/Detect
 %dir %{perl_vendorarch}/auto/Encode/Detect
 %dir %{perl_vendorarch}/auto/Encode/Detect/Detector
-%{perl_vendorarch}/auto/Encode/Detect/Detector/Detector.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Encode/Detect/Detector/*.so
 %{_mandir}/man3/*
