@@ -8,7 +8,7 @@ Summary:	Encode::Detect - An Encode::Encoding subclass that detects the encoding
 Summary(pl.UTF-8):	Encode::Detect - podklasa Encode::Encoding wykrywająca kodowanie danych
 Name:		perl-Encode-Detect
 Version:	1.01
-Release:	14
+Release:	15
 License:	MPL 1.1
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Encode/%{pdir}-%{pnam}-%{version}.tar.gz
